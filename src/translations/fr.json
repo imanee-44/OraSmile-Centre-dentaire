@@ -1,0 +1,125 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "services": "Services",
+    "journey": "Parcours Patient",
+    "testimonials": "Témoignages",
+    "book_appointment": "Prendre RDV",
+    "esthetic": "Esthétique Dentaire",
+    "implants": "Implants Dentaires",
+    "surgery": "Chirurgie Buccale",
+    "veneers": "Facettes en Céramique",
+    "invisalign": "Invisalign®",
+    "care": "Soins & Prévention"
+  },
+  "home": {
+    "hero": {
+      "badge": "Centre Dentaire OraSmile",
+      "title_start": "Votre plus beau sourire commence ",
+      "title_end": "ici",
+      "subtitle": "Allier expertise médicale, technologie de pointe et approche humaine pour des soins dentaires d'excellence à Casablanca.",
+      "cta_appointment": "Prendre Rendez-vous",
+      "cta_services": "Nos Services",
+      "trust_satisfaction": "5/5 satisfaction patients",
+      "trust_protocols": "Protocoles stérilisation stricts",
+      "card_comfort": "Confort garanti",
+      "card_soft": "Approche douce",
+      "card_doctor": "Dr Fadil Reda",
+      "card_expert": "Expert qualifié"
+    },
+    "doctor": {
+      "title": "Dr Fadil Reda, votre partenaire santé",
+      "quote": "\"Mon objectif est de réconcilier mes patients avec les soins dentaires en leur offrant une expérience basée sur l'écoute, le confort et l'excellence.\"",
+      "description": "Diplômé des plus grandes universités et constamment formé aux dernières techniques, Dr Fadil Reda met son savoir-faire au service de votre sourire. Que ce soit pour des soins esthétiques, de l'implantologie ou de l'orthodontie, chaque traitement est personnalisé.",
+      "learn_more": "En savoir plus",
+      "badge": "Confiance & Expertise"
+    },
+    "expertises": {
+      "title": "Nos Expertises",
+      "subtitle": "Des soins complets pour toute la famille",
+      "item_esthetic": "Esthétique",
+      "desc_esthetic": "Restauration de l'harmonie et de l'éclat de votre sourire.",
+      "item_implant": "Implant",
+      "desc_implant": "Solutions durables pour retrouver une dentition fonctionnelle.",
+      "item_surgery": "Chirurgie",
+      "desc_surgery": "Interventions précises pour votre santé bucco-dentaire par Dr Fadil.",
+      "item_veneers": "Facettes",
+      "desc_veneers": "Correction esthétique pour un sourire parfait et naturel.",
+      "item_invisalign": "Invisalign",
+      "desc_invisalign": "Alignement dentaire invisible et confortable pour tous les âges.",
+      "item_care": "Soins",
+      "desc_care": "Prévention et traitements conservateurs de haute qualité au quotidien.",
+      "view_all": "Voir tous les services"
+    },
+    "why_us": {
+      "title": "Pourquoi choisir OraSmile ?",
+      "benefit_1": "Technologie de pointe (Scanner 3D, Laser)",
+      "benefit_2": "Douceur et gestion de la douleur",
+      "benefit_3": "Transparence des tarifs et devis",
+      "benefit_4": "Hygiène et stérilisation irréprochables"
+    },
+    "cta": {
+      "title": "Prêt à révéler votre sourire ?",
+      "subtitle": "Prenez rendez-vous dès aujourd'hui pour une consultation personnalisée.",
+      "appointment": "Prendre Rendez-vous",
+      "call": "Nous appeler"
+    }
+  },
+  "footer": {
+    "desc": "Votre sourire, notre expertise. Dr Fadil Reda et son équipe vous accueillent dans un cadre moderne et chaleureux à Casablanca.",
+    "quick_links": "Liens Rapides",
+    "services": "Services",
+    "contact": "Contact",
+    "address": "ETG 2, N°2, 252 Bd Al Khalil, Casablanca 20480",
+    "opening_hours_title": "Horaires",
+    "opening_hours": "Lun - Ven: 08:30 - 20:30 \n Sam: 08:30 - 14:30 \n Dim: Fermé",
+    "copyright": "Centre Dentaire OraSmile. Tous droits réservés."
+  },
+  "services": {
+    "title_start": "Des soins d'excellence à ",
+    "title_end": "votre portée",
+    "subtitle": "Dr Fadil Reda met à votre service son expertise et les dernières technologies pour des résultats durables.",
+    "list": {
+      "esthetic_title": "Esthétique Dentaire",
+      "esthetic_desc": "Sublimez la beauté naturelle de votre sourire. Nous combinons art et science pour harmoniser la forme, la teinte et l'alignement de vos dents, vous offrant un résultat éclatant et parfaitement naturel.",
+      "implant_title": "Implants Dentaires",
+      "implant_desc": "Retrouvez le confort et la confiance d'une dentition complète. Nos solutions d'implantologie de pointe offrent une base solide, esthétique et durable pour remplacer les dents manquantes de manière permanente.",
+      "surgery_title": "Chirurgie Buccale",
+      "surgery_desc": "Des interventions de haute précision réalisées avec la plus grande délicatesse. Qu'il s'agisse d'extractions complexes ou de chirurgie reconstructrice, nous privilégions votre confort et une récupération rapide.",
+      "veneers_title": "Facettes en Céramique",
+      "veneers_desc": "La solution ultime pour un sourire de star. Les facettes permettent de corriger instantanément les imperfections de forme ou de couleur, créant un alignement parfait et une blancheur durable.",
+      "invisalign_title": "Invisalign®",
+      "invisalign_desc": "Alignez vos dents en toute discrétion. Grâce à des gouttières transparentes et amovibles, retrouvez un sourire parfaitement aligné sans les contraintes esthétiques et l'inconfort des bagues classiques.",
+      "care_title": "Soins & Prévention",
+      "care_desc": "Préserver votre capital dentaire est notre priorité. Nos protocoles de soins conservateurs et nos séances de prophylaxie assurent la santé à long terme de vos gencives et de vos dents."
+    }
+  },
+  "testimonials": {
+    "subtitle": "Témoignages",
+    "title_start": "Ce que nos patients ",
+    "title_end": "racontent",
+    "lead": "La satisfaction de nos patients est notre plus belle récompense.",
+    "google_source": "Retrouvez tous nos avis sur Google",
+    "google_cta": "Donner mon avis sur Google",
+    "reviews": [
+      { "name": "Ikram SOUHAIL", "text": "J'ai eu une excellente expérience avec ce dentiste. Il est très professionnel, gentil et attentif, et il prend le temps de tout expliquer clairement. Il m'a mise à l'aise et m'a rassurée tout au long de la visite. L'endroit est propre, calme et bien organisé, avec une atmosphère très accueillante. La qualité des soins est exceptionnelle, et on sent vraiment qu'il se soucie de ses patients." },
+      { "name": "Oussama Berrouch", "text": "J’ai été vraiment impressionné par le professionnalisme du Dr Réda Fadil. Il prend le temps d’expliquer chaque étape, met les patients en confiance et offre un suivi très soigné. On sent qu’il est passionné par son métier et qu’il a à cœur la santé dentaire de ses patients. Je le recommande les yeux fermés." },
+      { "name": "Ali Azzouzi", "text": "Excellent cabinet ! L’accueil est chaleureux, l’équipe est professionnelle et à l’écoute. Le dentiste prend le temps d’expliquer chaque étape des soins. Le suivi est sérieux et les locaux sont propres et modernes. Je recommande vivement ce cabinet." },
+      { "name": "snooker embassy", "text": "Un excellent dentiste, très professionnel et à l’écoute de ses patients. Le cabinet est moderne, propre et équipé des dernières technologies. Je recommande vivement pour des soins de qualité et en toute confiance." },
+      { "name": "Sara Benyahia", "text": "Je tiens à exprimer ma pleine satisfaction concernant la qualité des soins dentaires reçus. L’équipe s’est montrée rigoureuse, attentionnée et très professionnelle. Le docteur a pris le temps de m’expliquer chaque étape du traitement, ce qui m’a mise en totale confiance. Le résultat est remarquable." },
+      { "name": "Yassine", "text": "Je tiens à remercier toute l’équipe du cabinet pour leur professionnalisme et leur bienveillance. Dès mon arrivée, j’ai été accueilli avec le sourire dans un cadre propre et moderne. Le dentiste a pris le temps de tout m’expliquer avant chaque geste, avec une grande douceur." },
+      { "name": "Salma Wirti", "text": "Je recommande vivement ce cabinet dentaire ! L’accueil est chaleureux, l’équipe est professionnelle et rassurante, et les soins sont réalisés avec beaucoup de sérieux et de douceur. Les locaux sont propres, modernes et bien équipés." },
+      { "name": "Ghita Amhil", "text": "Je tiens à remercier sincèrement Dr Fadil pour son professionnalisme et sa bienveillance. Les soins ont été réalisés avec une grande douceur et une précision remarquable. C’est rare de se sentir aussi rassurée chez le dentiste." },
+      { "name": "Mohammed El Alaoui Lomari", "text": "Pris en charge pour une urgence dentaire, j’ai été impressionné par la grande écoute et le professionnalisme remarquable du Docteur Reda. Il a soigné mes dents sans aucune douleur et avec beaucoup de délicatesse." },
+      { "name": "yas mine", "text": "Je recommande vivement Dr Reda ! C’est un dentiste à l’écoute, très doux et professionnel. Le cabinet est propre, moderne et l’accueil chaleureux. Je sais désormais à qui confier ma santé dentaire !!" },
+      { "name": "Vaduz M", "text": "Super dentiste ! Il est jeune, sympa et très pro. Il m’a soigné avec douceur et efficacité. Cabinet tout neuf. Je recommande à 100 %, ça fait plaisir de voir un praticien aussi impliqué." },
+      { "name": "Yasmine F", "text": "Un dentiste très compétent et attentif, au petit soins. Dr Fadil a réussi à me mettre à l'aise avec une facilité incroyable alors que j'ai une phobie des dentistes! Merci pour votre service." },
+      { "name": "Achraf Boukhi", "text": "Expérience très positive dans ce centre dentaire ! Tout est nickel côté hygiène, l’équipe est compétente et rassurante. Même si j’avais une crainte au départ, je suis sortie avec le sourire." },
+      { "name": "Hicham rchouk", "text": "Très bon dentiste. Il a pris le temps de tout m’expliquer simplement et de me mettre à l’aise. Le soin a été fait rapidement et efficacement, sans stress. Je suis vraiment satisfait." },
+      { "name": "Leila S", "text": "Super dentiste ! Très gentil, professionnel et attentionné. Le cabinet est propre et on se sent tout de suite en confiance. Je recommande à 100 % !" }
+    ]
+  },
+  "journey": {
+    "title": "Votre Parcours Patient"
+  }
+}

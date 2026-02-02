@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, MapPin, Phone, Clock, Mail } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, MapPin, Phone, Clock, Mail } from 'lucide-react';
 import './Footer.css';
 import { Logo } from './Logo';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="container footer-grid">
@@ -12,58 +15,63 @@ const Footer = () => {
             <Logo width={80} height={80} lightMode={true} animated={false} />
           </Link>
           <p className="footer-desc">
-            Votre sourire, notre expertise. Dr Fadil Reda et son équipe vous accueillent dans un cadre moderne et chaleureux à Casablanca.
+            {t('footer.desc')}
           </p>
           <div className="social-links">
-            <a href="#" aria-label="Facebook"><Facebook /></a>
-            <a href="#" aria-label="Instagram"><Instagram /></a>
+            <a href="https://www.facebook.com/people/Dr-Fadil-Reda/61584153736684/" aria-label="Facebook"><Facebook /></a>
+            <a href="https://www.instagram.com/dentiste.fadil/?utm_source=ig_web_button_share_sheet" aria-label="Instagram"><Instagram /></a>
+            <a href="https://www.linkedin.com/in/dr-reda-fadil-384b252b4" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin /></a>
           </div>
         </div>
 
         <div className="footer-col">
-          <h3>Liens Rapides</h3>
+          <h3>{t('footer.quick_links')}</h3>
           <ul className="footer-links">
-            <li><a href="https://www.linkedin.com/in/dr-reda-fadil-384b252b4" target="_blank" rel="noopener noreferrer">Dr Fadil Reda</a></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/journey">Parcours Patient</Link></li>
-            <li><a href="tel:0522525461">Prendre Rendez-vous</a></li>
+            <li><Link to="/">{t('navbar.home')}</Link></li>
+            <li><Link to="/services">{t('navbar.services')}</Link></li>
+            <li><Link to="/journey">{t('navbar.journey')}</Link></li>
+            <li><a href="tel:0522525461">{t('navbar.book_appointment')}</a></li>
           </ul>
         </div>
 
         <div className="footer-col">
-          <h3>Services</h3>
+          <h3>{t('footer.services')}</h3>
           <ul className="footer-links">
-            <li><Link to="/services">Soins Généraux</Link></li>
-            <li><Link to="/services">Implantologie</Link></li>
-            <li><Link to="/services">Orthodontie</Link></li>
-            <li><Link to="/services">Esthétique du Sourire</Link></li>
+            <li><Link to="/services#esthetique">{t('navbar.esthetic')}</Link></li>
+            <li><Link to="/services#implants">{t('navbar.implants')}</Link></li>
+            <li><Link to="/services#chirurgie">{t('navbar.surgery')}</Link></li>
+            <li><Link to="/services#facettes">{t('navbar.veneers')}</Link></li>
+            <li><Link to="/services#invisalign">{t('navbar.invisalign')}</Link></li>
+            <li><Link to="/services#soins">{t('navbar.care')}</Link></li>
           </ul>
         </div>
 
         <div className="footer-col">
-          <h3>Contact</h3>
+          <h3>{t('footer.contact')}</h3>
           <ul className="footer-contact">
             <li>
               <MapPin size={20} />
-              <span>Boulevard d'Anfa, Casablanca</span>
+              <span> {t('footer.address')}</span>
             </li>
             <li>
               <Phone size={20} />
-              <a href="tel:0522525461" style={{ color: 'inherit' }}>0522525461</a>
-            </li>
-            <li>
-              <Mail size={20} />
-              <span>contact@orasmile.ma</span>
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <a href="tel:0522525461" style={{ color: 'inherit' }}>0522525461</a>
+                <a href="tel:0637372552" style={{ color: 'inherit' }}>0637372552</a>
+              </div>
             </li>
             <li>
               <Clock size={20} />
-              <span>Lun - Sam: 09:00 - 19:00</span>
+              <span style={{ whiteSpace: 'pre-line' }}>
+                <strong>{t('footer.opening_hours_title')}:</strong><br />
+                {t('footer.opening_hours')}
+              </span>
             </li>
           </ul>
         </div>
       </div>
       <div className="footer-bottom container">
-        <p>&copy; {new Date().getFullYear()} Centre Dentaire OraSmile. Tous droits réservés.</p>
+        <p>&copy; {new Date().getFullYear()} {t('footer.copyright')}</p>
       </div>
     </footer>
   );

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Cairo:wght@400;600;700&display=swap');
 
 :root {
   /* Brand Colors */
@@ -34,6 +34,18 @@ body {
   color: var(--neutral-800);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+[lang="ar"] body {
+  font-family: 'Cairo', sans-serif;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
 }
 
 button {

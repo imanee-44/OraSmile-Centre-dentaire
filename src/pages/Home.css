@@ -70,12 +70,20 @@
   align-items: center;
 }
 
-.hero-image-placeholder {
-  width: 400px;
+.hero-image-container {
+  width: 100%;
+  max-width: 500px;
   height: 500px;
-  background-color: var(--neutral-200);
-  border-radius: 2rem 2rem 0 2rem; /* Creating a shape */
   position: relative;
+  z-index: 1;
+}
+
+.hero-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem 2rem 0 2rem;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
 }
 
 .floating-card-1, .floating-card-2 {
@@ -148,15 +156,48 @@
   align-items: center;
 }
 
-.image-frame {
+.doctor-image-frame {
+  position: relative;
   width: 100%;
-  aspect-ratio: 4/3;
-  background: var(--neutral-300);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--neutral-800);
+  aspect-ratio: 1/1;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.doctor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border: 8px solid white;
+}
+
+.doctor-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--primary); /* Gold color */
+  color: white; /* White text */
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  z-index: 2;
+  box-shadow: 0 10px 30px rgba(191, 161, 95, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 4px solid white;
+}
+
+.doctor-badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(191, 161, 95, 0.5);
+}
+
+.doctor-badge span {
+  display: block;
+  white-space: nowrap;
 }
 
 .lead-text {
@@ -253,24 +294,25 @@
   height: 24px;
 }
 
-.stat-box {
-  background: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  text-align: center;
-  color: var(--neutral-900);
+.split-image-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.stat-number {
-  display: block;
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--primary);
-  line-height: 1;
+.office-image-container {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
 }
 
-.stat-label {
-  font-weight: 600;
+.office-image {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border: 4px solid rgba(255, 255, 255, 0.2);
 }
 
 /* CTA Section */
@@ -310,7 +352,7 @@
     justify-content: center;
   }
 
-  .hero-image-placeholder {
+  .hero-image-container {
     width: 100%;
     height: 350px;
   }
