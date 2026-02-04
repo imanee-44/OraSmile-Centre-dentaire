@@ -49,6 +49,8 @@
       "desc_invisalign": "Alignement dentaire invisible et confortable pour tous les âges.",
       "item_care": "Soins",
       "desc_care": "Prévention et traitements conservateurs de haute qualité au quotidien.",
+      "item_whitening": "Blanchiment",
+      "desc_whitening": "Technologie avancée pour un sourire éclatant immédiat.",
       "view_all": "Voir tous les services"
     },
     "why_us": {
@@ -91,7 +93,9 @@
       "invisalign_title": "Invisalign®",
       "invisalign_desc": "Alignez vos dents en toute discrétion. Grâce à des gouttières transparentes et amovibles, retrouvez un sourire parfaitement aligné sans les contraintes esthétiques et l'inconfort des bagues classiques.",
       "care_title": "Soins & Prévention",
-      "care_desc": "Préserver votre capital dentaire est notre priorité. Nos protocoles de soins conservateurs et nos séances de prophylaxie assurent la santé à long terme de vos gencives et de vos dents."
+      "care_desc": "Préserver votre capital dentaire est notre priorité. Nos protocoles de soins conservateurs et nos séances de prophylaxie assurent la santé à long terme de vos gencives et de vos dents.",
+      "whitening_title": "Blanchiment Dentaire",
+      "whitening_desc": "Illuminez votre sourire en une seule séance. Notre technologie de blanchiment activé par la lumière élimine les taches tenaces pour un résultat éclatant et immédiat."
     }
   },
   "testimonials": {
@@ -120,6 +124,22 @@
     ]
   },
   "journey": {
-    "title": "Votre Parcours Patient"
+    "title": "Votre Parcours Patient",
+    "subtitle": "Une expérience de soins fluide, transparente et personnalisée, de votre première visite à votre nouveau sourire.",
+    "steps": {
+      "title": "Les étapes de votre prise en charge",
+      "step1_title": "Première Consultation",
+      "step1_desc": "Un examen complet et une écoute attentive pour comprendre vos besoins et vos attentes.",
+      "step2_title": "Plan de Traitement",
+      "step2_desc": "Élaboration d'un devis clair et détaillé, adapté à votre situation clinique et financière.",
+      "step3_title": "Réalisation des Soins",
+      "step3_desc": "Interventions réalisées avec douceur et précision, grâce à des équipements de dernière génération.",
+      "step4_title": "Suivi & Maintenance",
+      "step4_desc": "Des visites de contrôle régulières pour garantir la pérennité de votre sourire."
+    },
+    "gallery": {
+      "title": "Avant / Après",
+      "subtitle": "Découvrez les transformations réalisées au cabinet. Des résultats concrets pour des sourires retrouvés."
+    }
   }
 }

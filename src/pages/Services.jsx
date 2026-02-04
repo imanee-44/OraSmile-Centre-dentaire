@@ -1,4 +1,4 @@
-import { Sparkles, Activity, Stethoscope, Smile, Shield, Heart } from 'lucide-react';
+import { Sparkles, Activity, Stethoscope, Smile, Shield, Heart, Zap } from 'lucide-react';
 import './Services.css';
 import estheticImg from '../assets/esthetic.png';
 import implantImg from '../assets/implant.png';
@@ -6,6 +6,7 @@ import surgeryImg from '../assets/surgery.png';
 import facettesImg from '../assets/facettes.png';
 import invisalignImg from '../assets/invisalign.png';
 import soinsImg from '../assets/soins.png';
+import whiteningImg from '../assets/whitening.png';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
@@ -47,6 +48,13 @@ export default function Services() {
       description: t('services.list.invisalign_desc'),
       icon: <Shield size={40} strokeWidth={1.5} />,
       image: invisalignImg
+    },
+    {
+      id: "blanchiment",
+      title: t('services.list.whitening_title'),
+      description: t('services.list.whitening_desc'),
+      icon: <Zap size={40} strokeWidth={1.5} />,
+      image: whiteningImg
     },
     {
       id: "soins",

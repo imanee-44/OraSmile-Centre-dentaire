@@ -1,0 +1,318 @@
+
+.journey-page {
+  padding-bottom: 5rem;
+}
+
+.journey-header {
+  position: relative;
+  text-align: center;
+  padding: 6rem 1rem;
+  background: url('../assets/journey-bg.png') center/cover no-repeat;
+  overflow: hidden;
+}
+
+.journey-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Fade from semi-transparent white at the top to solid white at the bottom */
+  background: linear-gradient(to bottom, 
+    rgba(255, 255, 255, 0.8) 0%, 
+    rgba(255, 255, 255, 0.9) 70%, 
+    rgba(255, 255, 255, 1) 100%
+  );
+  z-index: 1;
+}
+
+.journey-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.journey-header h1 {
+  color: var(--color-primary-dark);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.journey-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+
+.journey-steps::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2rem;
+  width: 2px;
+  background: var(--color-primary-light);
+  opacity: 0.3;
+}
+
+.journey-step {
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+  align-items: flex-start;
+}
+
+.step-indicator {
+  position: relative;
+  z-index: 2;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: white;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.15);
+  border: 2px solid var(--color-primary-light);
+  transition: all 0.3s ease;
+}
+
+.journey-step:hover .step-number {
+  background: var(--color-primary);
+  color: white;
+  transform: scale(1.1);
+}
+
+.step-content {
+  background: white;
+  padding: 1.25rem 1.75rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  flex-grow: 1;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.journey-step:hover .step-content {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.step-icon-wrapper {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.step-content h3 {
+  color: var(--color-text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.step-content p {
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 4rem 0;
+  background-color: #f8fafc;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.gallery-item {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  width: 100%;
+  max-width: 380px; /* Limits the size even on large screens */
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .gallery-item {
+    width: calc(50% - 1rem); /* 2 columns */
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery-item {
+    width: calc(33.333% - 1.35rem); /* 3 columns */
+  }
+}
+
+.comparison-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.before-image, .after-image, .combined-image {
+  width: 100%;
+  height: 140px; /* Small, elegant size */
+  position: relative;
+  overflow: hidden;
+  background-color: #f1f5f9; /* Light grey for empty state */
+}
+
+.image-skeleton {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f1f5f9 25%, #f8fafc 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.combined-image {
+  height: 282px; /* 140 + 2 + 140 */
+}
+
+.before-image.empty {
+  border-bottom: 2px solid white;
+}
+
+.before-image {
+  border-bottom: 2px solid white;
+}
+
+.before-image img, .after-image img, .combined-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.combined-image {
+  width: 100%;
+  height: 100%;
+}
+
+.label-badge {
+  position: absolute;
+  top: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+}
+
+.before-image .label-badge {
+  left: 10px;
+}
+
+.after-image .label-badge {
+  left: 10px; /* Align with Before badge */
+  background: rgba(37, 99, 235, 0.8); /* Primary color hint */
+}
+
+@media (min-width: 768px) {
+  .journey-steps::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .journey-step {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .journey-step:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  /* Center the number */
+  .journey-step .step-number {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+  
+  /* Initial state adjustments for spacing around center line */
+  .journey-step:nth-child(odd) .step-content {
+    margin-right: 52%; /* Push content to left */
+    padding-right: 2rem; 
+    text-align: right;
+  }
+  
+  .journey-step:nth-child(even) .step-content {
+    margin-left: 52%; /* Push content to right */
+    padding-left: 2rem;
+    text-align: left;
+  }
+
+  .journey-step:nth-child(odd) .step-icon-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* Fix spacing for content boxes */
+  .step-content {
+    width: 40%; /* Adjust width to fit */
+    flex-grow: 0;
+  }
+}
+
+/* CTA Section */
+.journey-cta {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.cta-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: var(--color-background);
+  border-radius: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.instagram-icon {
+  color: #E1306C;
+}
+
+.instagram-btn {
+  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instagram-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(225, 48, 108, 0.3);
+  opacity: 0.9;
+}

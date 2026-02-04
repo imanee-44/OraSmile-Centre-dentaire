@@ -49,6 +49,8 @@
       "desc_invisalign": "Invisible and comfortable tooth alignment for all ages.",
       "item_care": "Care",
       "desc_care": "High-quality prevention and conservative treatments daily.",
+      "item_whitening": "Whitening",
+      "desc_whitening": "Advanced technology for an immediate bright smile.",
       "view_all": "View all services"
     },
     "why_us": {
@@ -91,7 +93,9 @@
       "invisalign_title": "Invisalign®",
       "invisalign_desc": "Align your teeth discreetly. Thanks to transparent and removable aligners, regain a perfectly aligned smile without the functional constraints and discomfort of traditional braces.",
       "care_title": "Care & Prevention",
-      "care_desc": "Preserving your dental capital is our priority. Our conservative care protocols and prophylaxis sessions ensure the long-term health of your gums and teeth."
+      "care_desc": "Preserving your dental capital is our priority. Our conservative care protocols and prophylaxis sessions ensure the long-term health of your gums and teeth.",
+      "whitening_title": "Teeth Whitening",
+      "whitening_desc": "Brighten your smile in just one session. Our light-activated whitening technology removes stubborn stains for a radiant and immediate result."
     }
   },
   "testimonials": {
@@ -120,6 +124,22 @@
     ]
   },
   "journey": {
-    "title": "Your Patient Journey"
+    "title": "Your Patient Journey",
+    "subtitle": "A smooth, transparent, and personalized care experience, from your first visit to your new smile.",
+    "steps": {
+      "title": "Care Steps",
+      "step1_title": "First Consultation",
+      "step1_desc": "A comprehensive exam and attentive listening to understand your needs and expectations.",
+      "step2_title": "Treatment Plan",
+      "step2_desc": "Development of a clear and detailed quote, adapted to your clinical and financial situation.",
+      "step3_title": "Treatment Execution",
+      "step3_desc": "Interventions performed with gentleness and precision, using the latest generation equipment.",
+      "step4_title": "Follow-up & Maintenance",
+      "step4_desc": "Regular check-up visits to ensure the longevity of your smile."
+    },
+    "gallery": {
+      "title": "Before / After",
+      "subtitle": "Discover the transformations achieved at the clinic. Concrete results for rediscovered smiles."
+    }
   }
 }

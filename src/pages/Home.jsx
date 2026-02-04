@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle, Shield, Smile, Star, Sparkles, Activity, Heart, Stethoscope } from 'lucide-react';
+import { ArrowRight, CheckCircle, Shield, Smile, Star, Sparkles, Activity, Heart, Stethoscope, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import clinicImage from '../assets/clinic-reception.png';
@@ -7,7 +7,7 @@ import dentalOffice from '../assets/dental-office.png';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
-const Home = () => {
+const Home = ({ onBookClick }) => {
   const { t } = useTranslation();
 
   const fadeIn = {
@@ -41,14 +41,14 @@ const Home = () => {
               {t('home.hero.subtitle')}
             </p>
             <div className="hero-btns">
-              <motion.a 
+              <motion.button 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="tel:0522525461" 
+                onClick={onBookClick}
                 className="btn btn-primary"
               > 
                 {t('home.hero.cta_appointment')} <ArrowRight size={20} />
-              </motion.a>
+              </motion.button>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link to="/services" className="btn btn-outline">
                   {t('home.hero.cta_services')}
@@ -164,6 +164,7 @@ const Home = () => {
               { icon: <Stethoscope size={40} />, title: t('home.expertises.item_surgery'), desc: t('home.expertises.desc_surgery') },
               { icon: <Smile size={40} />, title: t('home.expertises.item_veneers'), desc: t('home.expertises.desc_veneers') },
               { icon: <Shield size={40} />, title: t('home.expertises.item_invisalign'), desc: t('home.expertises.desc_invisalign') },
+              { icon: <Zap size={40} />, title: t('home.expertises.item_whitening'), desc: t('home.expertises.desc_whitening') },
               { icon: <Heart size={40} />, title: t('home.expertises.item_care'), desc: t('home.expertises.desc_care') },
             ].map((item, i) => (
               <motion.div 
@@ -240,8 +241,22 @@ const Home = () => {
           <h2 className="heading-lg">{t('home.cta.title')}</h2>
           <p className="cta-subtitle">{t('home.cta.subtitle')}</p>
           <div className="cta-buttons center">
-            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="tel:0522525461" className="btn btn-primary">{t('home.cta.appointment')}</motion.a>
-            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="tel:0522525461" className="btn btn-outline">{t('home.cta.call')}</motion.a>
+            <motion.button 
+              whileHover={{ scale: 1.05 }} 
+              whileTap={{ scale: 0.95 }} 
+              onClick={onBookClick} 
+              className="btn btn-primary"
+            >
+              {t('home.cta.appointment')}
+            </motion.button>
+            <motion.a 
+              whileHover={{ scale: 1.05 }} 
+              whileTap={{ scale: 0.95 }} 
+              href="tel:0522525461" 
+              className="btn btn-outline"
+            >
+              {t('home.cta.call')}
+            </motion.a>
           </div>
         </motion.div>
       </section>

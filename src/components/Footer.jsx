@@ -4,7 +4,7 @@ import './Footer.css';
 import { Logo } from './Logo';
 import { useTranslation } from 'react-i18next';
 
-const Footer = () => {
+const Footer = ({ onBookClick }) => {
   const { t } = useTranslation();
 
   return (
@@ -30,7 +30,7 @@ const Footer = () => {
             <li><Link to="/">{t('navbar.home')}</Link></li>
             <li><Link to="/services">{t('navbar.services')}</Link></li>
             <li><Link to="/journey">{t('navbar.journey')}</Link></li>
-            <li><a href="tel:0522525461">{t('navbar.book_appointment')}</a></li>
+            <li><button onClick={onBookClick} className="footer-btn-link">{t('navbar.book_appointment')}</button></li>
           </ul>
         </div>
 

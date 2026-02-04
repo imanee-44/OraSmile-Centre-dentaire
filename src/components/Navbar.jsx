@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Languages } from 'lucide-react';
+import { Menu, X, Languages, ArrowRight } from 'lucide-react';
 import './Navbar.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 import { Logo } from './Logo';
 
-const Navbar = () => {
+const Navbar = ({ onBookClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [showLang, setShowLang] = useState(false);
@@ -66,10 +66,19 @@ const Navbar = () => {
           <Link to="/journey" className={location.pathname === '/journey' ? 'active' : ''}>{t('navbar.journey')}</Link>
           <Link to="/testimonials" className={location.pathname === '/testimonials' ? 'active' : ''}>{t('navbar.testimonials')}</Link>
           
-          <a href="tel:0522525461" className="btn btn-primary btn-sm">
-            <Phone size={16} />
+          <motion.button 
+            type="button"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={(e) => {
+              e.preventDefault();
+              onBookClick();
+            }} 
+            className="btn btn-primary"
+          >
             {t('navbar.book_appointment')}
-          </a>
+            <ArrowRight size={18} />
+          </motion.button>
 
           <div className="lang-selector-container">
             <button className="lang-btn" onClick={() => setShowLang(!showLang)}>
@@ -101,7 +110,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <div className="mobile-actions">
-          <button className="mobile-toggle" onClick={() => setIsOpen(!isOpen)}>
+          <button className="mobile-toggle" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
             {isOpen ? <X /> : <Menu />}
           </button>
           
@@ -140,7 +149,21 @@ const Navbar = () => {
             <Link to="/services">{t('navbar.services')}</Link>
             <Link to="/journey">{t('navbar.journey')}</Link>
             <Link to="/testimonials">{t('navbar.testimonials')}</Link>
-            <a href="tel:0522525461" className="btn btn-primary">{t('navbar.book_appointment')}</a>
+            <motion.button 
+              type="button"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={(e) => {
+                e.preventDefault();
+                onBookClick();
+                setIsOpen(false);
+              }} 
+              className="btn btn-primary" 
+              style={{ width: '100%' }}
+            >
+              {t('navbar.book_appointment')}
+              <ArrowRight size={20} />
+            </motion.button>
           </div>
         </div>
       </div>

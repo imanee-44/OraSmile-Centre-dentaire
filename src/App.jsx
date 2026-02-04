@@ -7,15 +7,21 @@ import Services from './pages/Services';
 import PatientJourney from './pages/PatientJourney';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
+import BookingModal from './components/BookingModal';
+import { useState } from 'react';
 
 function App() {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const openBooking = () => setIsBookingOpen(true);
+  const closeBooking = () => setIsBookingOpen(false);
+
   return (
     <Router>
       <div className="app-container">
-        <Navbar />
+        <Navbar onBookClick={openBooking} />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home onBookClick={openBooking} />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/journey" element={<PatientJourney />} />
@@ -23,7 +29,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-        <Footer />
+        <Footer onBookClick={openBooking} />
+        <BookingModal isOpen={isBookingOpen} onClose={closeBooking} />
       </div>
     </Router>
   );
